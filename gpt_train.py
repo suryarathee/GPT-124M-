@@ -447,4 +447,5 @@ with open('model.pkl', 'rb') as f:
 # to run simple launch:
 #python train_gpt2.py
 #DDP launch for
+#Docker file to be updated soon
 #torchrun --standalone --nproc_per_node = 8 train_gpt2.py
