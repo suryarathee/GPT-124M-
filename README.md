@@ -4,7 +4,9 @@ A minimal and efficient implementation of a Transformer-based language model, in
 
 ## 🚀 Model Overview
 
-This GPT model follows the architecture of the original Transformer, as introduced in *Attention is All You Need* (Vaswani et al., 2017).
+This GPT model follows the architecture of the original Transformer, as introduced in [Attention is All You Need](https://doi.org/10.48550/arXiv.1706.03762).
+The basic System design is inspired by [ChatGPT2](https://github.com/openai/gpt-2) which was implemented in Tensorflow.
+Introduction of new concept like Flash Attention have decreased Training time as compared to initial GPT2 Model.
 
 ### 🔧 Transformer Block
 
