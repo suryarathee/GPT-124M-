@@ -6,7 +6,10 @@ A minimal and efficient implementation of a Transformer-based language model, in
 
 This GPT model follows the architecture of the original Transformer, as introduced in [Attention is All You Need](https://doi.org/10.48550/arXiv.1706.03762).
 The basic System design is inspired by [ChatGPT2](https://github.com/openai/gpt-2) which was implemented in Tensorflow.
-Introduction of new concept like Flash Attention have decreased Training time as compared to initial GPT2 Model.
+Introduction of new concept like Flash Attention  have decreased Training time as compared to initial GPT2 Model.
+Training date used is [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/viewer) which is much better that OpenWebText used by Original ChatGPT2.
+
+
 
 ### 🔧 Transformer Block
 
@@ -28,7 +31,7 @@ Where:
 - **FFN** is a position-wise feed-forward network.
 - **Dropout** improves generalization.
 
-### 🧠 Architecture Flow
+### Architecture Flow
 
 The model processes input tokens as follows:
 
@@ -38,7 +41,7 @@ x_{i+1} = TransformerBlock(x_i),  for i = 0, ..., N-1
 \hat{y} = Softmax(Linear(x_N))
 ```
 
-### 🎯 Objective
+###  Objective
 
 The model is trained using the **causal language modeling** loss:
 
@@ -46,7 +49,7 @@ The model is trained using the **causal language modeling** loss:
 \mathcal{L} = -\sum_{t=1}^{T} \log P(x_t \mid x_{<t})
 ```
 
-## ⚙️ Training Features
+##  Training Features
 
 - **Cosine Learning Rate Decay**:
 
