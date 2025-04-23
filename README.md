@@ -10,7 +10,8 @@ Introduction of new concept like Flash Attention  have decreased Training time a
 Training date used is [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/viewer) which is much better that OpenWebText used by Original ChatGPT2.
 
 
-![image](https://github.com/user-attachments/assets/5a493b66-960d-413d-9c41-28a0f9977d3b)
+![image](https://github.com/user-attachments/assets/726cddb4-f620-4385-a147-add57e7a4ba1)
+
 
 
 
